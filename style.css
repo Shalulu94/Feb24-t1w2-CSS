@@ -1,10 +1,38 @@
+/* Default styles for small screens and anything not caught by @media */
+
 body {
     background-color: paleturquoise;
 }
 
+h3 {
+    display:block
+}
+
+.column {
+    width: 100%;
+  }
+
+  
+  /* Clear floats after the columns */
+  .row:after {
+        content: "";
+        display: table;
+        clear: both;
+  }
+  
+
+
+
+/* Styles for screens 600px wide and larger */
 @media screen and (min-width: 600px) {
     body {
         background-color: palevioletred;
     }
+
+    
+    .column {
+        float: left;
+        width: 33.33%;
+      }
     
 }
